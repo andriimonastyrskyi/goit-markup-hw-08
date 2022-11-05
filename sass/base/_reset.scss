@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+
+  width: 100%;
+}
+.header a,
+.footer a,
+.contact {
+  text-decoration: none;
+}
+
+.text,
+.address-list {
+  text-decoration: none;
+}
+
+.list,
+.address-list,
+.contact {
+  list-style: none;
+}
