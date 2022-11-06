@@ -191,7 +191,7 @@
     @media screen and (min-width: 1200px) {
       font-weight: 500;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 1.14;
       letter-spacing: 0.02em;
     }
   }
@@ -332,13 +332,12 @@
     margin-bottom: 64px;
     display: block;
     line-height: 1.67;
-    // color: var(--secondary-text);
   }
 }
 
 .contact-soc {
   display: flex;
-  font-weight: wrap;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 479px) {
     justify-content: center;
@@ -351,7 +350,7 @@
   &__item {
     padding: 0 10px;
 
-    @media screen and (min-width: 470px) {
+    @media screen and (min-width: 480px) {
       &:not(:first-child) {
         border-left: 1px solid rgba(33, 33, 33, 0.2);
       }
@@ -360,10 +359,8 @@
       display: flex;
       justify-content: center;
       flex-basis: 50%;
-      &:nth-child(4n + 1),
-      &:nth-child(4n + 2) {
-        margin-bottom: 10px;
-      }
+
+      margin-bottom: 10px;
     }
   }
 

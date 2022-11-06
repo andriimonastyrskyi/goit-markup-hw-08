@@ -998,7 +998,7 @@ body {
   .nav__link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
   }
 }
@@ -1172,7 +1172,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 479px) {
   .contact-soc {
@@ -1189,7 +1190,7 @@ body {
 .contact-soc__item {
   padding: 0 10px;
 }
-@media screen and (min-width: 470px) {
+@media screen and (min-width: 480px) {
   .contact-soc__item:not(:first-child) {
     border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
@@ -1204,8 +1205,6 @@ body {
             justify-content: center;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-  }
-  .contact-soc__item:nth-child(4n+1), .contact-soc__item:nth-child(4n+2) {
     margin-bottom: 10px;
   }
 }
