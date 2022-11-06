@@ -967,6 +967,13 @@ body {
     margin-bottom: 40px;
   }
 }
+@media screen and (min-width: 768px) {
+  .nav__page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .nav__item {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1023,6 +1030,7 @@ body {
 .contact {
   font-weight: 500;
   letter-spacing: 0.02;
+  color: var(--secondary-text);
 }
 @media screen and (max-width: 768px) {
   .contact {
@@ -1103,7 +1111,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .contact__tel {
-    color: var(--accent-text);
+    color: var(--secondary-text);
   }
 }
 
@@ -1122,6 +1130,7 @@ body {
     margin-bottom: 64px;
     display: block;
     line-height: 1.67;
+    color: var(--secondary-text);
   }
 }
 
@@ -1163,6 +1172,13 @@ body {
         flex-basis: 50%;
     margin-bottom: 10px;
   }
+}
+.contact-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-text);
 }
 
 .contact-soc__link {
