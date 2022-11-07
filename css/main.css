@@ -1193,6 +1193,11 @@ body {
     line-height: 1.67;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact__mail {
+    margin: 0 30px;
+  }
+}
 .contact__icon {
   margin-right: 8px;
   fill: currentColor;
