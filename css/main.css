@@ -1125,6 +1125,13 @@ body {
     display: flex;
   }
 }
+@media screen and (min-width: 768px) {
+  .nav__page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .nav__item {
   font-weight: 500;
   letter-spacing: 0.02em;
