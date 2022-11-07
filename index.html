@@ -56,7 +56,7 @@
               </li>
             </ul>
           </nav>
-          <ul class="contact">
+          <ul class="contact list">
             <li class="contact__item">
               <a href="mailto:info@devstudio.com" class="contact__mail mob active">
                 <svg class="contact__icon" width="16" height="12">
@@ -156,19 +156,41 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__item">
-              <img src="./image/img.jpg" alt="Картинка" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./image/work/mobile.webp 1x, ./image/work/mobile@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source srcset="./image/work/mobile.jpg 1x, ./image/work/mobile@2x.jpg 2x" />
+                <img src="./image/mobile.jpg" alt="Картинка" />
+              </picture>
               <div class="work__inner">
                 <h3 class="work__desc">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work__item">
-              <img src="./image/img(1).jpg" alt="Картинка1" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./image/work/tab.webp 1x, ./image/work/tab@2x.webp 2x"
+                />
+                <source srcset="./image/work/tab.jpg 1x, ./image/work/tab@2x.jpg 2x" />
+                <img src="./image/img(1).jpg" alt="Картинка1" />
+              </picture>
               <div class="work__inner">
                 <h3 class="work__desc">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work__item">
-              <img src="./image/img(2).jpg" alt="Картинка2" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./image/work/rgb.webp 1x, ./image/work/rgb@2x.webp 2x"
+                />
+                <source srcset="./image/work/rgb.jpg 1x, ./image/work/rgb@2x.jpg 2x" />
+                <img src="./image/img(2).jpg" alt="Картинка2" />
+              </picture>
               <div class="work__inner">
                 <h3 class="work__desc">Дизайнерські рішення</h3>
               </div>
@@ -182,7 +204,54 @@
           <h2 class="title">Наша команда</h2>
           <ul class="cards list list">
             <li class="card">
-              <img src="./image/igor.jpg" alt="Ігор Дем'яненко" />
+              <picture>
+                <source
+                  media="min-width: 1200px"
+                  srcset="
+                    ./image/team/demyanenko-desktop.webp    1x,
+                    ./image/team/demyanenko-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="min-width: 1200px"
+                  srcset="
+                    ./image/team/demyanenko-desktop.jpg    1x,
+                    ./image/team/demyanenko-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="min-width: 768px"
+                  srcset="
+                    ./image/team/demyanenko-tablet.webp    1x,
+                    ./image/team/demyanenko-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="min-width: 768px"
+                  srcset="
+                    ./image/team/demyanenko-tablet.jpg    1x,
+                    ./image/team/demyanenko-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="max-width: 767px"
+                  srcset="
+                    ./image/team/demyanenko-mobile.webp    1x,
+                    ./image/team/demyanenko-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="max-width: 767px"
+                  srcset="
+                    ./image/team/demyanenko-mobile.jpg    1x,
+                    ./image/team/demyanenko-mobile@2x.jpg 2x
+                  "
+                />
+                <img src="./image/igor.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="card__inner">
                 <h3 class="card__titel">Ігор Дем'яненко</h3>
                 <p class="card__descr">Product Designer</p>
@@ -220,7 +289,39 @@
             </li>
 
             <li class="card">
-              <img src="./image/olga.jpg" alt="Ольга Рєпіна" />
+              <picture>
+                <source
+                  media="min-width: 1200px"
+                  srcset="
+                    ./image/team/repina-desktop.webp    1x,
+                    ./image/team/repina-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="min-width: 1200px"
+                  srcset="./image/team/repina-desktop.jpg 1x, ./image/team/repina-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="min-width: 768px"
+                  srcset="./image/team/repina-tablet.webp 1x, ./image/team/repina-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="min-width: 768px"
+                  srcset="./image/team/repina-tablet.jpg 1x, ./image/team/repina-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="max-width: 767px"
+                  srcset="./image/team/repina-mobile.webp 1x, ./image/team/repina-mobile@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="max-width: 767px"
+                  srcset="./image/team/repina-mobile.jpg 1x, ./image/team/repina-mobile@2x.jpg 2x"
+                />
+                <img src="./image/olga.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="card__inner">
                 <h3 class="card__titel">Ольга Рєпіна</h3>
                 <p class="card__descr">Frontend Developer</p>
@@ -258,7 +359,48 @@
             </li>
 
             <li class="card">
-              <img src="./image/mukola.jpg" alt="Микола Тарасов" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/team/tarasov-desktop.webp    1x,
+                    ./image/team/tarasov-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/team/tarasov-desktop.jpg    1x,
+                    ./image/team/tarasov-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/team/tarasov-tablet.webp    1x,
+                    ./image/team/tarasov-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./image/team/tarasov-tablet.jpg 1x, ./image/team/tarasov-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./image/team/tarasov-mobile.webp    1x,
+                    ./image/team/tarasov-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./image/team/tarasov-mobile.jpg 1x, ./image/team/tarasov-mobile@2x.jpg 2x"
+                />
+                <img src="./image/mukola.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="card__inner">
                 <h3 class="card__titel">Микола Тарасов</h3>
                 <p class="card__descr">Marketing</p>
@@ -296,7 +438,48 @@
             </li>
 
             <li class="card">
-              <img src="./image/mykhaylo.jpg" alt="Михайло Єрмаков" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/team/ermakov-desktop.webp    1x,
+                    ./image/team/ermakov-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/team/ermakov-desktop.jpg    1x,
+                    ./image/team/ermakov-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/team/ermakov-tablet.webp    1x,
+                    ./image/team/ermakov-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./image/team/ermakov-tablet.jpg 1x, ./image/team/ermakov-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./image/team/ermakov-mobile.webp    1x,
+                    ./image/team/ermakov-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./image/team/ermakov-mobile.jpg 1x, ./image/team/ermakov-mobile@2x.jpg 2x"
+                />
+                <img src="./image/mykhaylo.jpg" alt="Михайло Єрмаков" />
+              </picture>
               <div class="card__inner">
                 <h3 class="card__titel">Михайло Єрмаков</h3>
                 <p class="card__descr">UI Designer</p>
