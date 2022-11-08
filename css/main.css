@@ -780,7 +780,8 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-right: 93px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 

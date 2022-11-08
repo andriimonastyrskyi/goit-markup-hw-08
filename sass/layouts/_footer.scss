@@ -23,7 +23,7 @@
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: baseline;
-      margin-right: 93px;
+      flex-wrap: wrap;
     }
   }
 }
