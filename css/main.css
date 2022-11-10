@@ -670,8 +670,16 @@ body {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .advantage__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 }
 .advantage__text {
   font-weight: 400;
